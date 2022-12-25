@@ -29,7 +29,7 @@ twitter_username: A_r_n_e
 github_username:  arnesund
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
