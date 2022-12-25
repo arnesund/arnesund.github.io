@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   to make available online.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:day/:title/
 twitter_username: A_r_n_e
 github_username:  arnesund
 
