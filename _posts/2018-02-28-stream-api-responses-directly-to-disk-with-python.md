@@ -10,8 +10,6 @@ tags:
   - "requests"
   - "streaming"
   - "tools"
-header:
-  image: "assets/images/python_logo_and_wordmark-svg.png"
 ---
 
 Python is the de-facto language for Data Science work. It's very convenient to rapidly prototype a solution in Python and see if it works. However when faced with setting up the same solution in production, there are new space and time constraints to take into account. You'll likely find that memory usage is the number one resource constraint you need to pay attention to. So let me share a useful trick to reduce memory usage in the early stages of a Python job.
