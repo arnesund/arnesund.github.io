@@ -63,7 +63,7 @@ $ nova floating-ip-associate web1 10.99.1.71
 
 The new web instance has Apache running right from the start, no manual steps needed:
 
-[![Default Apache2 page](images/apache2-set-up-using-cloudinit.png)](https://arnesund.files.wordpress.com/2015/02/apache2-set-up-using-cloudinit.png)
+![Default Apache2 page](/assets/images/apache2-set-up-using-cloudinit.png)
 
 ### More Cloud-init options: Cloud-Config syntax
 
