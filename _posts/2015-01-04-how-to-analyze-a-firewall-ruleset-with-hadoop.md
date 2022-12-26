@@ -27,7 +27,7 @@ For instructions on how to install the prerequisites required for the analysis t
 
 Here is an example of the output for each firewall rule:
 {% highlight shell %}
-fw01: access-list inside-in, rule 123: permit tcp 10.1.0.0/24 -> 0.0.0.0/0:\[8080\]
+fw01: access-list inside-in, rule 123: permit tcp 10.1.0.0/24 -> 0.0.0.0/0:[8080]
 access-list inside-in extended permit tcp object-group inside-subnets any object-group Web
 Total number of hits: 7
  COUNT PROTO  FROM IP       TO IP          PORT  FIRST SEEN           LAST SEEN          
@@ -58,12 +58,12 @@ Submit the job to the Hadoop cluster with the path to the firewall log files in 
 {% endhighlight %}
 The output from Hadoop Streaming is shown on the console:
 {% highlight shell %}
-arnes@hadoop01:~/ruleset-analysis$ ./runAnalysis.sh /data/fw01/\*2014\*
-arnes@hadoop01:~/ruleset-analysis$ packageJobJar: \[.//config.py, .//firewallrule.py, .//input/accesslists.db, .//name-number-mappings.db, .//mapper.py, .//connlist-reducer.py, /tmp/hadoop-arnes/hadoop-unjar8081511066204186990/\] \[\] /tmp/streamjob7183564462078091113.jar tmpDir=null
+arnes@hadoop01:~/ruleset-analysis$ ./runAnalysis.sh /data/fw01/*2014*
+arnes@hadoop01:~/ruleset-analysis$ packageJobJar: [.//config.py, .//firewallrule.py, .//input/accesslists.db, .//name-number-mappings.db, .//mapper.py, .//connlist-reducer.py, /tmp/hadoop-arnes/hadoop-unjar8081511066204186990/] [] /tmp/streamjob7183564462078091113.jar tmpDir=null
 15/01/04 11:24:56 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 15/01/04 11:24:56 WARN snappy.LoadSnappy: Snappy native library not loaded
 15/01/04 11:24:57 INFO mapred.FileInputFormat: Total input paths to process : 365
-15/01/04 11:24:57 INFO streaming.StreamJob: getLocalDirs(): \[/data/1/mapred/local, /data/2/mapred/local, /data/3/mapred/local\]
+15/01/04 11:24:57 INFO streaming.StreamJob: getLocalDirs(): [/data/1/mapred/local, /data/2/mapred/local, /data/3/mapred/local]
 15/01/04 11:24:57 INFO streaming.StreamJob: Running job: job_201411291614_1372
 15/01/04 11:24:57 INFO streaming.StreamJob: To kill this job, run:
 15/01/04 11:24:57 INFO streaming.StreamJob: /usr/libexec/../bin/hadoop job  -Dmapred.job.tracker=hadoop01:8021 -kill job_201411291614_1372
