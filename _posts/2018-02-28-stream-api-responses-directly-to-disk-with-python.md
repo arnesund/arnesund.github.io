@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Stream API responses directly to disk with Python"
 date: "2018-02-28"
 tags: 
