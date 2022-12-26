@@ -74,7 +74,7 @@ The "Done!!!" line marks the end of the setup script downloaded from get.socketp
 
 ### Important note about SocketPlane on OpenStack VMs
 
-If you just follow the deployment instructions for a [Non-Vagrant install / deploy](https://github.com/socketplane/socketplane#non-vagrant-install--deploy "SocketPlane Non-Vagrant install/deploy") in the SocketPlane README, you might run into an issue with the SocketPlane agent. The agent by default tries to autodetect the network interface to bind to, but that does not seem to work as expected when using OpenStack VMs. If you encounter this issue, the agent log will be full of messages like these:
+If you just follow the deployment instructions for a [Non-Vagrant install / deploy](https://github.com/socketplane/socketplane#non-vagrant-install--deploy) in the SocketPlane README, you might run into an issue with the SocketPlane agent. The agent by default tries to autodetect the network interface to bind to, but that does not seem to work as expected when using OpenStack VMs. If you encounter this issue, the agent log will be full of messages like these:
 
 {% highlight shell %}
 $ sudo socketplane agent logs
