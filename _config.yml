@@ -29,9 +29,11 @@ twitter_username: A_r_n_e
 github_username:  arnesund
 
 # Build settings
-theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+# Themes
+theme: minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.
