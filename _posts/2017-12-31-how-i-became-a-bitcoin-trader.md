@@ -13,7 +13,7 @@ tags:
   - "trading"
 ---
 
-![bitcoin-2007769_1920](images/bitcoin-2007769_1920.jpg)
+![bitcoin-2007769_1920](/assets/images/bitcoin-2007769_1920.jpg)
 
 ## Running a trading bot for fun and profit
 
@@ -43,7 +43,8 @@ Based on these findings I concluded that the Blade Runner bot performs best in a
 
 ## Running the bot
 
-\[caption id="attachment\_1058" align="alignnone" width="1131"\]![Blade Runner bot running](images/blade-runner-bot-running.png) Screenshot of live bot instance running on the CryptoTrader platform\[/caption\]
+| ![Blade Runner bot running](/assets/images/blade-runner-bot-running.png) |
+| Screenshot of live bot instance running on the CryptoTrader platform |
 
 The bot has a set of parameters for tuning the behavior, along with six main modes of operation: Optimal, Automatic, Rising, Falling, Sideways and Very Low Capital. I started out with a small amount of BTC for trading and chose the Very Low Capital mode. In all other modes the bot uses a varying percentage of the total funds when placing each order. In the Very Low Capital setting this percentage is always 50%. The main reason for this is to ensure that the amount in each order is enough to avoid being rejected as too small by the exchange. This setting did however result in very few trades per day and low profits. So I quickly switched to Optimal mode instead.
 
@@ -68,7 +69,5 @@ The bot has managed to generate enough profits in three weeks to cover the amoun
 This has been a very exciting experiment and I've learned a lot about cryptocurrencies, trading, signals and bots. Generating a net profit is also nice, even though it's not very big. The biggest advantage is all the new knowledge.
 
 Remember that the information in this blog post should not be relied upon as advice or construed as providing recommendations of any kind. Any trading activity is inherently risky and it's important to keep in mind that all money used for trading could get lost.
-
-Did you find this useful? Consider donating some BTC to 13sTihkkJtP8UjuWFgFpEiFuiheCb9fQNE if you want.
 
 ~ Arne ~
