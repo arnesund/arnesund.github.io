@@ -13,7 +13,9 @@ tags:
   - "openstack"
 ---
 
-[![OpenStack and Docker](https://arnesund.files.wordpress.com/2016/02/openstack-and-docker.png?w=660)](https://arnesund.files.wordpress.com/2016/02/openstack-and-docker.png)OpenStack has the potential to revolutionize how enterprises do virtualization, so lots of people are currently busy with setting up OpenStack private clouds. I've been part of such a project too. In this post, I'll explain why I believe Docker makes a lot of sense to use for deploying the services that together make up an OpenStack cloud. Docker features flexibility, orchestration, clustering and more.
+![OpenStack and Docker](/assets/images/openstack-and-docker.png)
+
+OpenStack has the potential to revolutionize how enterprises do virtualization, so lots of people are currently busy with setting up OpenStack private clouds. I've been part of such a project too. In this post, I'll explain why I believe Docker makes a lot of sense to use for deploying the services that together make up an OpenStack cloud. Docker features flexibility, orchestration, clustering and more.
 
 ## All about microservices
 
