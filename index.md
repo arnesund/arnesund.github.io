@@ -4,4 +4,4 @@
 
 layout: home
 ---
-This is an archive of the blog posts I published in the period 2015-2018.
+A collection of random tech tidbits that live on the Internet now. Beware that tech tidbits age quickly so the old posts are Use At Your Own Risk.
