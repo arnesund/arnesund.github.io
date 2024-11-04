@@ -25,7 +25,7 @@ Below each image I'll include the output from each model I've tested. Plus a des
 
 The first image showcases a Pokémon GO collection challenge screenshot, testing the model's ability to interpret gaming interfaces and recognize specific game elements.
 
-![Pokemon Go Collection Challenge](/assets/images/test1.png)
+<img src="/assets/images/test1.png" alt="Pokemon Go Collection Challenge" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
@@ -46,7 +46,7 @@ Tested using OpenRouter on 2024-11-02.
 
 A landscape photograph featuring power lines against a natural backdrop. What we want to see here is the ability to describe the scene, the objects included and the overall feel of it.
 
-![Field with Power Lines](/assets/images/test2.jpg)
+<img src="/assets/images/test2.jpg" alt="Field with Power Lines" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
@@ -62,7 +62,7 @@ Tested using OpenRouter on 2024-11-02.
 
 Finding rare pokemon is always fun and a common reason to take a screenshot. To catalogue them later and make them searchable, we at least need to know that it's Pokemon Go and the name of the pokemon.
 
-![Pokemon Go Catch Scene](/assets/images/test3.png)
+<img src="/assets/images/test3.png" alt="Pokemon Go Catch Scene" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
@@ -102,7 +102,7 @@ Tested using OpenRouter on 2024-11-02.
 
 A detailed shot of a Gainomax product, specifically chosen to test OCR capabilities and product detail identification. Taking images of random products to remember their specs is something I often do. And I'm rarely able to find the images back later, hence why I need searchable descriptions.
 
-![Gainomax Product](/assets/images/test4.jpg)
+<img src="/assets/images/test4.jpg" alt="Gainomax Product" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
@@ -124,7 +124,7 @@ Tested using OpenRouter on 2024-11-02.
 
 A Pokémon GO Pokédex screenshot, testing the model's ability to interpret structured game information.
 
-![Pokemon Go Pokedex](/assets/images/test5.png)
+<img src="/assets/images/test5.png" alt="Pokemon Go Pokedex" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
@@ -142,7 +142,7 @@ Tested using OpenRouter on 2024-11-02.
 
 An electrical saw with technical specifications, evaluating the model's capability to process and understand technical product information and do accurate OCR. I also ideally want it to understand the Norwegian name of the product and either refer to it as-is or translated to English.
 
-![Electrical Saw](/assets/images/test6.jpg)
+<img src="/assets/images/test6.jpg" alt="Electrical Saw" style="max-width:300px;">
 
 ### Llama 3.2 11B vision-instruct
 
