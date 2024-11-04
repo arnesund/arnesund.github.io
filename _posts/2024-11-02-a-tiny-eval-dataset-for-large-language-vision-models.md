@@ -10,7 +10,7 @@ Each image serves a specific purpose in testing different aspects of vision LLMs
 
 I use a small prompt, typically something like "Describe the photo or screenshot", when testing each model. Different prompts might tease out higher quality descriptions of course, but we're doing a vibe check here and the most important part of that is the ability to discard a model as not interesting quickly.
 
-Below each image I'll include the output from each model I've tested. Plus a description of which models I still consider good or even best.
+Below each image I include an assessment of how each model did on that task. Expanding that assessment reveals the full output from the model, for those that want to inspect the details.
 
 ## Model summary
 
@@ -18,12 +18,18 @@ Scores are subjective from 0 to 10.
 
 | Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Average | Tested at  |
 |-------------------------------|---------|---------|---------|---------|---------|---------|---------|------------|
-| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |
+| Llama 3.2 11B Vision-Instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |
+| MiniCPM-V 2.6                 |   10    |   10    |   10    |   10    |    8    |   10    |   9.7   | 2024-09-11 |
+
 
 ### Model test notes
 
 **Llama 3.2 11B Vision-Instruct**:
 Tested using OpenRouter. Most likely a FP8 or BF16 version of the model, although provider details are unclear. Prompt used: "Describe the photo or screenshot".
+
+**MiniCPM-V 2.6**
+Tested as a local model using Ollama, pulled from the Ollama library in the default Q4 quant. Prompt used: "Describe the photo or screenshot. Include keywords describing details of what the image contains. Include the name of the app or game if it’s a screenshot."
+
 
 ## 1. Pokemon Go collection challenge
 
@@ -42,6 +48,19 @@ The slider bar is at the bottom, and the area is green at the top, transitioning
 Additionally, there are two small-scale logos near the top on the left side. The image suggests that it may be a crossword puzzle game since the surrounding levels do not display any clues as to what game it is.
 </details>
 
+<details>
+<summary>
+MiniCPM-V 2.6: Great - gets to the point and includes all necessary details.
+</summary>
+The image is a screenshot from the game 'Pokémon Go,' showing the player's achievement of completing a Collection Challenge. The screen displays a congratulatory message in bold, white text against a vibrant green background with an overlay of faint city outlines and icons related to gameplay options such as weather conditions or health status at the top right corner.
+
+Key elements include:
+- A golden coin icon indicating '77' - likely representing collected items.
+- Instructions encouraging players to see their Elite Collector medal in-game for all completed challenges, which is highlighted by a circular button with an upward arrow and text "SHARE" above it and another labeled "SAVE IMAGE" below it.
+
+The user's username appears at the bottom left corner, along with some numerical data indicating game statistics. The overall theme suggests progression within the gameplay towards collecting items or completing specific objectives, which is a common feature in augmented reality games like Pokémon Go aimed at encouraging exploration and strategy among players to collect various in-game creatures known as 'Pokémon.'
+</details>
+
 
 ## 2. Photo of a natural, rural scene
 
@@ -56,6 +75,14 @@ Llama 3.2 11B Vision-Instruct: Okay - I've seen better descriptions than this, b
 This serene landscape image captures a farmland landscape at dusk, with a row of power lines extending from the right to move background a row of trees, fading into the sky's warm hues of blue, pink, orange, and yellow. In the foreground, a tree is silhouetted in a field of green grass, which gradually transitions to dry fields. Beyond the row of power lines, trees line the far horizon, with a red building peeking through the silhouette of the towers and trees. The image exudes a sense of tranquility and peacefulness, conveying a feeling of time spent in rural solitude.
 </details>
 
+<details>
+<summary>
+MiniCPM-V 2.6: Great
+</summary>
+This image captures a serene rural scene at dusk. The sky is transitioning from day to night, with the sun setting on the horizon and casting a warm glow across the landscape. Power lines are prominently featured in the foreground, leading into the distance where they converge near some buildings partially visible through the trees. A field of tall grass occupies most of the lower half of the image, adding texture and depth to the scene. The overall mood is peaceful and contemplative, evoking a sense of tranquility as day turns to evening.
+
+Keywords: rural landscape, dusk, power lines, fields, sunset, tranquil atmosphere
+</details>
 
 ## 3. Pokemon Go catch scene
 
@@ -94,6 +121,18 @@ Here are the key elements of the image:
 Overall, the image appears to be a screenshot from a Pokémon game, possibly a bonus challenge level where the player must catch Snorlax. The peaceful atmosphere and serene surroundings suggest a morning or daytime setting, but the exact time of day is not specified.
 </details>
 
+<details>
+<summary>
+MiniCPM-V 2.6: Great - Has all the required details and doesn't over-explain.
+</summary>
+The image depicts a vibrant scene from the Pokémon Go mobile game. At its center is Snorlax, a large blue and white Pokémon with pink cheeks, sitting in an open field surrounded by colorful autumnal trees showcasing shades of red and purple leaves against a clear sky. The text "Bonus Challenge! Catch Snorlax!" appears prominently across the image, indicating that players have successfully caught this rare Pokémon during their gameplay session.
+
+Key details include:
+- Time display at the top left corner reading '06:36'.
+- Network signal indicator showing 4G with a full battery.
+- The colorful and lively environment of the game's setting represents typical in-game exploration areas.
+</details>
+
 
 ## 4. Text recognition in product snapshots
 
@@ -114,6 +153,13 @@ The container rests on a light brown wooden surface, with the wood displaying di
 Overall, this image showcases a nutritional beverage product, highlighting its unique flavor and key features while emphasizing its health benefits, making it an attractive option for consumers seeking a convenient and nutritious drink.
 </details>
 
+<details>
+<summary>
+MiniCPM-V 2.6: Great - Recognizes all the text and interprets it correctly.
+</summary>
+This image displays a product, specifically a carton of 'Gainomax Choco Coffee' which is marketed as high protein and without added sugar. It's positioned on a wooden surface with the brand name prominently displayed at the top in bold black letters against a white background. The front of the packaging features images of chocolate pieces, coffee beans, and chunks of cocoa, emphasizing its flavor profile. Key details include '30g PROTEIN' highlighted as one of its main selling points, accompanied by other claims like 'NO ADDED SUGAR'. It's 250 ml in volume. The overall setting suggests a focus on health-conscious consumers interested in nutritional supplements or high-protein beverages.
+</details>
+
 
 ## 5. Pokedex Recognition
 
@@ -128,6 +174,15 @@ Llama 3.2 11B Vision-Instruct: Failure - The LLM misunderstands, this is not a l
 The image shows the top half of a cell phone screen displaying the Pokémon Go login screen, with the phone's battery life and signal strength visible. The screen features a pink and purple background with a 3D rendering of a Pokémon, a banner indicating that the user is registered to Pokédex, nine Pokémons in boxes, as well as a time and character selection
 
 Overall, the image suggests that the user has just logged in to their Pokémon Go account and is now ready to play the game, with the top half of the screen displaying the login screen and the bottom half displaying the user's profile information.
+</details>
+
+<details>
+<summary>
+MiniCPM-V 2.6: Okay - Gets the overall theme correct but not all the details.
+</summary>
+The image depicts a scene from the mobile game "Pokémon GO." It shows an in-game notification at the top indicating that it's 20:50, with signal strength bars and battery life displayed. A Pokémon named Saltyshark is shown above this notification, rendered in a simplistic low-poly art style against a pink gradient background. Below are icons representing various items or creatures within the game, including other Pokémon such as Articuno, Piplup, Vulpix, and others. The text "Registered to Pokédex" suggests that an item has been added to this virtual encyclopedia feature in-game.
+
+Keywords: mobile app screenshot, Pokémon GO, notification bar, 20:50 time display, Saltyshark creature model, low-poly art style, pink gradient background, icons representing different items or creatures.
 </details>
 
 
@@ -158,6 +213,24 @@ The image shows a close-up view of an electrical device with wires and cables at
 	+ The plate has a slight curvature to it, suggesting that it may be a mounting surface for the device
 
 Overall, the image suggests that the device is an electrical component, possibly a motor or generator, and that it is designed to be mounted on a surface or connected to external wires. The yellow label provides important information about the device's specifications and performance characteristics.
+</details>
+
+<details>
+<summary>
+MiniCPM-V 2.6: Great - Recognizes the product, does OCR of model number, power rating and all other mentioned details.
+</summary>
+This image appears to be a photograph of an electrical device, specifically labeled as "Kapp- og gjæringssag" which translates from Norwegian or Swedish to 'cover and securing tool'. The label on the box provides technical specifications for this particular model. Key details include:
+
+1. **Model Number**: M1YT-3Z0-205
+2. **Power Rating**: 800W, indicating its electrical power consumption.
+3. **Voltage and Frequency**: 230V/50Hz, specifying the voltage and frequency at which it should be operated (common for Europe).
+4. **Dimensions**:
+   - Ø205 x 30 mm
+   - Height: 1.6 cm
+5. **Speed**: 4500R.P.M., referring to its rotational speed.
+6. **Certifications**: The box displays several certification marks indicating compliance with various safety and quality standards, including CE marking which ensures that the product meets EU health, safety, and environmental protection requirements.
+
+The device is mounted on what seems like a piece of machinery or workbench setup, suggesting it's used in an industrial or workshop environment. Given its robust build and professional labeling, this tool likely serves as part of larger equipment for specific tasks requiring securement or covering operations.
 </details>
 
 
