@@ -16,10 +16,10 @@ Below each image I include an assessment of how each model did on that task. Exp
 
 Scores are subjective from 0 to 10.
 
-| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Average | Tested at  |
+| Large Language Model          | Average | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Tested at  |
 |-------------------------------|---------|---------|---------|---------|---------|---------|---------|------------|
-| Llama 3.2 11B Vision-Instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |
-| MiniCPM-V 2.6                 |   10    |   10    |   10    |   10    |    8    |   10    |   9.7   | 2024-09-11 |
+| Llama 3.2 11B Vision-Instruct |   5.2   |    3    |    8    |   10    |    8    |    0    |    2    | 2024-11-02 |
+| MiniCPM-V 2.6                 |   9.7   |   10    |   10    |   10    |   10    |    8    |   10    | 2024-09-11 |
 
 
 ### Model test notes
@@ -190,7 +190,7 @@ Keywords: mobile app screenshot, Pokémon GO, notification bar, 20:50 time displ
 
 An electrical saw with technical specifications, evaluating the model's capability to process and understand technical product information and do accurate OCR. I also ideally want it to understand the Norwegian name of the product and either refer to it as-is or translated to English.
 
-<img src="/assets/images/test6.jpg" alt="Electrical Saw" style="max-width:300px;">
+<img src="/assets/images/test6.jpg" alt="Electrical Saw" style="max-width:600px;">
 
 <details>
 <summary>
