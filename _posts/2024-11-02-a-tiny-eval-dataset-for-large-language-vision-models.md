@@ -29,13 +29,13 @@ The first image showcases a Pokémon GO collection challenge screenshot, testing
 
 ### Llama 3.2 11B vision-instruct
 
-<small>
+---
 This image shows a screenshot of a screen display on an iPhone, with a green and blue gradient background featuring level lines of a bike path. At the top left are the time "14:06" in white, wireless data signal strength, and battery level. In the center, below the section saying "Congratulations!", is a gold ring around an image showing a medal with the number 77.
-</small><small>
+
 The slider bar is at the bottom, and the area is green at the top, transitioning to blue over a map or road and houses. There are lines that look like level bars on a road on the right and light green text on the right side, saying "5:05:30" and "SHARE". The bottom of the slider bar has a light green rounded rectangle with white "SHARE" text next to a light-green circle with a white outline to its right. Below it is a similar-looking blue button with white "SAVE IMAGE" text and the Save photo icon.
-</small><small>
+
 Additionally, there are two small-scale logos near the top on the left side. The first one is marked “Airspodcast” in white text. The image suggests that it may be a crossword puzzle game since the surrounding levels do not display any clues as to what game it is.
-</small>
+---
 
 **Not great**: Did not mention the name of the game (Pokemon Go). Very good at OCR-ing the text, but not good enough at describing what the screenshot most likely represents.
 
@@ -50,11 +50,13 @@ A landscape photograph featuring power lines against a natural backdrop. What we
 
 ### Llama 3.2 11B vision-instruct
 
-<small>
-This serene landscape image captures a farmland landscape at dusk, with a row of power lines extending from the right to move background a row of trees, fading into the sky's warm hues of blue, pink, orange, and yellow. In the foreground, a tree is silhouetted in a field of green grass, which gradually transitions to dry fields. Beyond the row of power lines, trees line the far horizon, with a red building peeking through the silhouette of the towers and trees. The image exudes a sense of tranquility and peacefulness, conveying a feeling of time spent in rural solitude.
-</small>
-
+<details>
+<summary>
 **Okay**: I've seen better descriptions than this, but it's certainly good enough.
+</summary>
+This serene landscape image captures a farmland landscape at dusk, with a row of power lines extending from the right to move background a row of trees, fading into the sky's warm hues of blue, pink, orange, and yellow. In the foreground, a tree is silhouetted in a field of green grass, which gradually transitions to dry fields. Beyond the row of power lines, trees line the far horizon, with a red building peeking through the silhouette of the towers and trees. The image exudes a sense of tranquility and peacefulness, conveying a feeling of time spent in rural solitude.
+</details>
+
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -66,9 +68,9 @@ Finding rare pokemon is always fun and a common reason to take a screenshot. To 
 
 ### Llama 3.2 11B vision-instruct
 
-<small>
+<div style="padding: 1em; border: 1px solid gray; border-radius: 5px;">
 The image shows a screenshot of a phone screen with the Pokémon character Snorlax in the center, surrounded by trees and mountains. The overall atmosphere is peaceful and serene, suggesting a morning or daytime setting.
-</small><small>
+
 Here are the key elements of the image:
 * **Snorlax:**
 	+ Standing in the center of the image
@@ -90,9 +92,9 @@ Here are the key elements of the image:
 * **Text:**
 	+ "Bonus Challenge!" written in white font
 	+ "Catch Snorlax!" written below the first line
-</small><small>
+
 Overall, the image appears to be a screenshot from a Pokémon game, possibly a bonus challenge level where the player must catch Snorlax. The peaceful atmosphere and serene surroundings suggest a morning or daytime setting, but the exact time of day is not specified.
-</small>
+</div>
 
 **Great**: Very detailed, possibly too detailed. But that's not a problem for search and embedding use-cases. 
 
