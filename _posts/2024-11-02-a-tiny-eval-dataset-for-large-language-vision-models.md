@@ -16,13 +16,10 @@ Below each image I'll include the output from each model I've tested. Plus a des
 
 Scores are subjective from 0 to 10.
 
-| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | **Average** |
-|-------------------------------|---------|---------|---------|---------|---------|---------|-------------|
-| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |     5.2     |
+| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Average | Tested at  | Notes |
+|-------------------------------|---------|---------|---------|---------|---------|---------|---------|------------|-------|
+| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |       |
 
-
-
-# Detailed output
 
 ## 1. Pokemon Go collection challenge
 
@@ -41,8 +38,6 @@ The slider bar is at the bottom, and the area is green at the top, transitioning
 Additionally, there are two small-scale logos near the top on the left side. The image suggests that it may be a crossword puzzle game since the surrounding levels do not display any clues as to what game it is.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
-
 
 ## 2. Photo of a natural, rural scene
 
@@ -57,7 +52,6 @@ Llama 3.2 11B Vision-Instruct: Okay - I've seen better descriptions than this, b
 This serene landscape image captures a farmland landscape at dusk, with a row of power lines extending from the right to move background a row of trees, fading into the sky's warm hues of blue, pink, orange, and yellow. In the foreground, a tree is silhouetted in a field of green grass, which gradually transitions to dry fields. Beyond the row of power lines, trees line the far horizon, with a red building peeking through the silhouette of the towers and trees. The image exudes a sense of tranquility and peacefulness, conveying a feeling of time spent in rural solitude.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
 
 ## 3. Pokemon Go catch scene
 
@@ -96,7 +90,6 @@ Here are the key elements of the image:
 Overall, the image appears to be a screenshot from a Pokémon game, possibly a bonus challenge level where the player must catch Snorlax. The peaceful atmosphere and serene surroundings suggest a morning or daytime setting, but the exact time of day is not specified.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
 
 ## 4. Text recognition in product snapshots
 
@@ -117,7 +110,6 @@ The container rests on a light brown wooden surface, with the wood displaying di
 Overall, this image showcases a nutritional beverage product, highlighting its unique flavor and key features while emphasizing its health benefits, making it an attractive option for consumers seeking a convenient and nutritious drink.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
 
 ## 5. Pokedex Recognition
 
@@ -134,7 +126,6 @@ The image shows the top half of a cell phone screen displaying the Pokémon Go l
 Overall, the image suggests that the user has just logged in to their Pokémon Go account and is now ready to play the game, with the top half of the screen displaying the login screen and the bottom half displaying the user's profile information.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
 
 ## 6. Technical Documentation
 
@@ -165,5 +156,4 @@ The image shows a close-up view of an electrical device with wires and cables at
 Overall, the image suggests that the device is an electrical component, possibly a motor or generator, and that it is designed to be mounted on a surface or connected to external wires. The yellow label provides important information about the device's specifications and performance characteristics.
 </details>
 
-Tested using OpenRouter on 2024-11-02.
 
