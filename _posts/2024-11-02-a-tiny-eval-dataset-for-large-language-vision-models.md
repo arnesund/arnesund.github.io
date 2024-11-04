@@ -48,7 +48,7 @@ Tested using OpenRouter on 2024-11-02.
 
 A landscape photograph featuring power lines against a natural backdrop. What we want to see here is the ability to describe the scene, the objects included and the overall feel of it.
 
-<img src="/assets/images/test2.jpg" alt="Field with Power Lines" style="max-width:300px;">
+<img src="/assets/images/test2.jpg" alt="Field with Power Lines" style="max-width:600px;">
 
 <details>
 <summary>
