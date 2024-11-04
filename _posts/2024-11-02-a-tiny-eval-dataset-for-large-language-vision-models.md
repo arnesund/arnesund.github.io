@@ -14,9 +14,12 @@ Below each image I'll include the output from each model I've tested. Plus a des
 
 ## Model summary
 
-| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 |
-|-------------------------------|---------|---------|---------|---------|---------|---------|
-| Llama 3.2 11B vision-instruct |         |         |         |         |         |         |
+Scores are subjective from 0 to 10.
+
+| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | **Average** |
+|-------------------------------|---------|---------|---------|---------|---------|---------|-------------|
+| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |     5.2     |
+
 
 
 # Detailed output
@@ -27,17 +30,16 @@ The first image showcases a Pokémon GO collection challenge screenshot, testing
 
 <img src="/assets/images/test1.png" alt="Pokemon Go Collection Challenge" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
----
+<details>
+<summary>
+Llama 3.2 11B Vision-Instruct: Not great - Did not mention Pokemon Go. Okay at OCR but not good at describing what the screenshot most likely represents.
+</summary>
 This image shows a screenshot of a screen display on an iPhone, with a green and blue gradient background featuring level lines of a bike path. At the top left are the time "14:06" in white, wireless data signal strength, and battery level. In the center, below the section saying "Congratulations!", is a gold ring around an image showing a medal with the number 77.
 
 The slider bar is at the bottom, and the area is green at the top, transitioning to blue over a map or road and houses. There are lines that look like level bars on a road on the right and light green text on the right side, saying "5:05:30" and "SHARE". The bottom of the slider bar has a light green rounded rectangle with white "SHARE" text next to a light-green circle with a white outline to its right. Below it is a similar-looking blue button with white "SAVE IMAGE" text and the Save photo icon.
 
-Additionally, there are two small-scale logos near the top on the left side. The first one is marked “Airspodcast” in white text. The image suggests that it may be a crossword puzzle game since the surrounding levels do not display any clues as to what game it is.
----
-
-**Not great**: Did not mention the name of the game (Pokemon Go). Very good at OCR-ing the text, but not good enough at describing what the screenshot most likely represents.
+Additionally, there are two small-scale logos near the top on the left side. The image suggests that it may be a crossword puzzle game since the surrounding levels do not display any clues as to what game it is.
+</details>
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -48,15 +50,12 @@ A landscape photograph featuring power lines against a natural backdrop. What we
 
 <img src="/assets/images/test2.jpg" alt="Field with Power Lines" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
 <details>
 <summary>
-**Okay**: I've seen better descriptions than this, but it's certainly good enough.
+Llama 3.2 11B Vision-Instruct: Okay - I've seen better descriptions than this, but it's certainly good enough.
 </summary>
 This serene landscape image captures a farmland landscape at dusk, with a row of power lines extending from the right to move background a row of trees, fading into the sky's warm hues of blue, pink, orange, and yellow. In the foreground, a tree is silhouetted in a field of green grass, which gradually transitions to dry fields. Beyond the row of power lines, trees line the far horizon, with a red building peeking through the silhouette of the towers and trees. The image exudes a sense of tranquility and peacefulness, conveying a feeling of time spent in rural solitude.
 </details>
-
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -66,9 +65,10 @@ Finding rare pokemon is always fun and a common reason to take a screenshot. To 
 
 <img src="/assets/images/test3.png" alt="Pokemon Go Catch Scene" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
-<div style="padding: 1em; border: 1px solid gray; border-radius: 5px;">
+<details>
+<summary>
+Llama 3.2 11B Vision-Instruct: Great - Very detailed, possibly too detailed. But that's not a problem for search and embedding use-cases. 
+</summary>
 The image shows a screenshot of a phone screen with the Pokémon character Snorlax in the center, surrounded by trees and mountains. The overall atmosphere is peaceful and serene, suggesting a morning or daytime setting.
 
 Here are the key elements of the image:
@@ -94,9 +94,7 @@ Here are the key elements of the image:
 	+ "Catch Snorlax!" written below the first line
 
 Overall, the image appears to be a screenshot from a Pokémon game, possibly a bonus challenge level where the player must catch Snorlax. The peaceful atmosphere and serene surroundings suggest a morning or daytime setting, but the exact time of day is not specified.
-</div>
-
-**Great**: Very detailed, possibly too detailed. But that's not a problem for search and embedding use-cases. 
+</details>
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -106,19 +104,18 @@ A detailed shot of a Gainomax product, specifically chosen to test OCR capabilit
 
 <img src="/assets/images/test4.jpg" alt="Gainomax Product" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
-<small>
+<details>
+<summary>
+Llama 3.2 11B Vision-Instruct: Almost great - First time seeing a LLM output a typo like "brpwn". The rest of the output ticks the boxes.
+</summary>
 This photograph depicts a container of Gainomax Choco Coffee High Protein drink. The white container features white cap, with the brand name "Gainomax" in upper case, and "Choco Coffee" in a larger, brown font accenting the "C". The packaging communicates nutritional information: "High Protein" alongside a white number 30 and "No Added Sugar", as well as its volume (250 ml).
-</small><small>
-The front of the carton features brpwn liquid splatters,  a partial view of a coffee bean, and an image of chocolate depicting the melting of a square cube of chocolate.
-</small><small>
-The container rests on a light brown wooden surface, with the wood displaying distinctive curly grain, some of which overtops the edges.
-</small><small>
-Overall, this image showcases a nutritional beverage product, highlighting its unique flavor and key features while emphasizing its health benefits, making it an attractive option for consumers seeking a convenient and nutritious drink.
-</small>
 
-**Almost great**: Did you notice the typo? First time seeing a LLM output a typo like "brpwn". The rest of the output ticks all the boxes.
+The front of the carton features brpwn liquid splatters,  a partial view of a coffee bean, and an image of chocolate depicting the melting of a square cube of chocolate.
+
+The container rests on a light brown wooden surface, with the wood displaying distinctive curly grain, some of which overtops the edges.
+
+Overall, this image showcases a nutritional beverage product, highlighting its unique flavor and key features while emphasizing its health benefits, making it an attractive option for consumers seeking a convenient and nutritious drink.
+</details>
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -128,15 +125,14 @@ A Pokémon GO Pokédex screenshot, testing the model's ability to interpret stru
 
 <img src="/assets/images/test5.png" alt="Pokemon Go Pokedex" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
-<small>
+<details>
+<summary>
+Llama 3.2 11B Vision-Instruct: Failure - The LLM misunderstands, this is not a login screen.
+</summary>
 The image shows the top half of a cell phone screen displaying the Pokémon Go login screen, with the phone's battery life and signal strength visible. The screen features a pink and purple background with a 3D rendering of a Pokémon, a banner indicating that the user is registered to Pokédex, nine Pokémons in boxes, as well as a time and character selection
-</small><small>
-Overall, the image suggests that the user has just logged in to their Pokémon Go account and is now ready to play the game, with the top half of the screen displaying the login screen and the bottom half displaying the user's profile information.
-</small>
 
-**Failure**: The LLM misunderstands, this is not a login screen.
+Overall, the image suggests that the user has just logged in to their Pokémon Go account and is now ready to play the game, with the top half of the screen displaying the login screen and the bottom half displaying the user's profile information.
+</details>
 
 Tested using OpenRouter on 2024-11-02.
 
@@ -146,11 +142,12 @@ An electrical saw with technical specifications, evaluating the model's capabili
 
 <img src="/assets/images/test6.jpg" alt="Electrical Saw" style="max-width:300px;">
 
-### Llama 3.2 11B vision-instruct
-
-<small>
+<details>
+<summary>
+Llama 3.2 11B Vision-Instruct: Quite bad - It only recognizes some of the specifications like the power rating and voltage. It completely misses the name of the product (it's a saw) and goes on too much about the wires and plates and whatnot.
+</summary>
 The image shows a close-up view of an electrical device with wires and cables attached to it. The device is black and has a yellow label on the front.
-</small><small>
+
 * A yellow label on the front of a black device:
 	+ The label is rectangular in shape
 	+ It has a yellow background with black text
@@ -164,11 +161,9 @@ The image shows a close-up view of an electrical device with wires and cables at
 	+ The plate is flat and rectangular in shape
 	+ It is positioned directly underneath the device
 	+ The plate has a slight curvature to it, suggesting that it may be a mounting surface for the device
-</small><small>
-Overall, the image suggests that the device is an electrical component, possibly a motor or generator, and that it is designed to be mounted on a surface or connected to external wires. The yellow label provides important information about the device's specifications and performance characteristics.
-</small>
 
-**Quite bad**: It only recognizes some of the specifications like the power rating and voltage. It completely misses the name of the product (it's a saw) and goes on too much about the wires and plates and whatnot.
+Overall, the image suggests that the device is an electrical component, possibly a motor or generator, and that it is designed to be mounted on a surface or connected to external wires. The yellow label provides important information about the device's specifications and performance characteristics.
+</details>
 
 Tested using OpenRouter on 2024-11-02.
 
