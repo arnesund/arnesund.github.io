@@ -1,6 +1,6 @@
 # Making a tiny personal benchmark dataset for vision-LLMs
 
-New LLMs pop up every day it seems, so having a way to do a quick vibe check of each is important. This post introduces my small personal photo benchmark dataset that reflects images typically found in my smartphone's camera roll.
+New LLMs pop up every day it seems, so having a way to do a quick vibe check of each is important. This post introduces my small personal photo benchmark dataset that reflects images typically found in my camera roll.
 
 The use-case I have in mind is to get a vision-LLM to automatically describe all my photos and screenshots from 20 years of digital photography. Since that needs to happen using batch processing, there's no room for follow-up questions or other techniques to improve a description. Once I choose a model I'll do some additional prompt tuning to get the best possible results from that model, but it'll still be just one request per image.
 
@@ -8,7 +8,7 @@ The use-case I have in mind is to get a vision-LLM to automatically describe all
 
 Each image serves a specific purpose in testing different aspects of vision LLMs' capabilities. There's currently a bit much from Pokemon Go here, but on the other hand I still play and document achievements by taking screenshots so those screenshots are easily half of my camera roll too.
 
-For each vision-capable LLM, I'll post each image along with a small prompt, typically "Describe the photo or screenshot". Different prompts might tease out higher quality descriptions of course, but we're doing a vibe check here and the most important part of that is the ability to discard a model as not interesting quickly.
+I use a small prompt, typically something like "Describe the photo or screenshot", when testing each model. Different prompts might tease out higher quality descriptions of course, but we're doing a vibe check here and the most important part of that is the ability to discard a model as not interesting quickly.
 
 Below each image I'll include the output from each model I've tested. Plus a description of which models I still consider good or even best.
 
@@ -16,10 +16,14 @@ Below each image I'll include the output from each model I've tested. Plus a des
 
 Scores are subjective from 0 to 10.
 
-| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Average | Tested at  | Notes |
-|-------------------------------|---------|---------|---------|---------|---------|---------|---------|------------|-------|
-| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |       |
+| Large Language Model          | Image 1 | Image 2 | Image 3 | Image 4 | Image 5 | Image 6 | Average | Tested at  |
+|-------------------------------|---------|---------|---------|---------|---------|---------|---------|------------|
+| Llama 3.2 11B vision-instruct |    3    |    8    |   10    |    8    |    0    |    2    |   5.2   | 2024-11-02 |
 
+### Model test notes
+
+**Llama 3.2 11B Vision-Instruct**:
+Tested using OpenRouter. Most likely a FP8 or BF16 version of the model, although provider details are unclear. Prompt used: "Describe the photo or screenshot".
 
 ## 1. Pokemon Go collection challenge
 
