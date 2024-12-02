@@ -1,3 +1,17 @@
+---
+layout: post
+title: "A Tiny Eval Dataset for Large Language Vision Models"
+date: "2024-11-02"
+categories:
+  - "AI"
+tags:
+  - "llm"
+  - "local llm"
+  - "ollama"
+  - "minicpm-v"
+  - "llama"
+---
+
 # Making a tiny personal benchmark dataset for vision-LLMs
 
 New LLMs pop up every day it seems, so having a way to do a quick vibe check of each is important. This post introduces my small personal photo benchmark dataset that reflects images typically found in my camera roll.
