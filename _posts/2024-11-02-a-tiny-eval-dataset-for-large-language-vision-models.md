@@ -10,6 +10,7 @@ tags:
   - "ollama"
   - "minicpm-v"
   - "llama"
+excerpt: "A small personal benchmark dataset to quickly evaluate vision-capable LLMs using images that reflect my typical camera roll content. The goal is to find models that can automatically describe photos and screenshots for batch processing of 20 years of digital photography. Through testing Pokemon Go screenshots, landscapes, product photos, and technical documentation, I compare how well different models handle real-world image description tasks."
 ---
 
 # Making a tiny personal benchmark dataset for vision-LLMs

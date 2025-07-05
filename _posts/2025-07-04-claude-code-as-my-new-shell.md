@@ -9,6 +9,7 @@ tags:
   - "shell"
   - "productivity"
   - "cli"
+excerpt: "Claude Code is an impressive CLI tool. So much so that I made it my default shell. Instead of memorizing commands and checking man pages, I can now describe my intent and let Claude Code construct and execute complex commands directly on my laptop."
 ---
 
 # Claude Code as My Default Shell
