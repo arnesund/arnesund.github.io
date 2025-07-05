@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spark - How to fix "WARN TaskSchedulerImpl: Initial job has not accepted any resources""
+title: "Spark - How to fix WARN TaskSchedulerImpl Initial job has not accepted any resources"
 date: "2015-08-19"
 categories: 
   - "analytics"
