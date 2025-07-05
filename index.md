@@ -1,7 +1,157 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: clean
 ---
 A collection of random tech tidbits that live on the Internet now. Beware that tech tidbits age quickly so the old posts are Use At Your Own Risk.
+
+## Recent Posts
+
+<div class="recent-posts-grid">
+  {% for post in site.posts limit: 3 %}
+    <article class="post-tile">
+      <header class="post-header">
+        <h3 class="post-title">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <p class="post-meta">
+          <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%b %-d, %Y" }}
+          </time>
+        </p>
+      </header>
+      
+      {% if post.excerpt %}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncate: 200 }}
+        </div>
+      {% endif %}
+      
+      <footer class="post-footer">
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+      </footer>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="other-posts-link">
+  <a href="{{ '/all-posts/' | relative_url }}" class="btn btn-primary">View All Posts</a>
+</div>
+
+<style>
+.recent-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.post-tile {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.post-tile .post-header {
+  flex-grow: 0;
+  margin-bottom: 1rem;
+}
+
+.post-tile .post-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.post-tile .post-link {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.post-tile .post-link:hover {
+  text-decoration: underline;
+}
+
+.post-tile .post-meta {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #586069;
+}
+
+.post-tile .post-excerpt {
+  flex-grow: 1;
+  margin: 1rem 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.post-tile .post-footer {
+  flex-grow: 0;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.post-tile .read-more {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.post-tile .read-more:hover {
+  text-decoration: underline;
+}
+
+.other-posts-link {
+  text-align: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #0366d6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0256cc;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .recent-posts-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .post-tile {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .recent-posts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
